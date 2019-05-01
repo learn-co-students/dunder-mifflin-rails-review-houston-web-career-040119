@@ -1,0 +1,7 @@
+<h1>Dunder Woof-lin!</h1>
+
+  <ul>
+  <% @dogs.sort{|a,b| b.employee_count <=> a.employee_count }.each do |dog| %>
+    <p><li><%= link_to "#{dog.name} - #{dog.employee_count} Employees", dog_path(dog) %></li></p>
+  <% end %>
+  </ul>

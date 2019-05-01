@@ -1,0 +1,9 @@
+<h1><%= @employee.name %></h1>
+<p>
+  Alias:   <%= @employee.alias %><br>
+  Title:   <%= @employee.title %><br>
+  Office:  <%= @employee.office %><br>
+  Dog:     <%= @employee.dog.name %><br>
+  <br>
+  <img src=<%= "#{@employee.img_url}" %> alt=<%= "#{@employee.name}"%>>
+</p>

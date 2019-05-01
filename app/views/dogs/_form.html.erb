@@ -1,0 +1,11 @@
+<h1>Dog Form:</h1>
+<%= form_for @dog do |f| %>
+  <%= f.label "Name: " %>
+  <%= f.text_field :name %><br>
+  <%= f.label "Age: " %>
+  <%= f.text_field :age %><br>
+  <%= f.label "Breed: " %>
+  <%= f.text_field :breed %><br>
+  <br>
+  <%= f.submit "Send to the Assistant to the Regional Manager" %>
+<% end %>
