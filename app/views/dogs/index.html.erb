@@ -1,0 +1,9 @@
+<h1>All Dogs</h1>
+<% @dogs_arr = @dogs.sort do |dog1, dog2| %>
+<% dog2.employees.count <=> dog1.employees.count %>
+<% end %>
+
+
+<% @dogs_arr.each do |dog| %>
+<li><%= link_to dog.name, dog_path(dog) %></li>
+<% end %>

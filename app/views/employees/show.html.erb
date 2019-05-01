@@ -1,0 +1,18 @@
+<h1><%= @employee.full_name %></h1>
+<label>First Name:</label>
+<%= @employee.first_name %>
+<br>
+<label>Last Name:</label>
+<%= @employee.last_name %>
+<br>
+<label>Alias:</label>
+<%= @employee.alias %>
+<br>
+<label>Title:</label>
+<%= @employee.title %>
+<br>
+<label>Office:</label>
+<%= @employee.office %>
+<br>
+<%= image_tag(@employee.img_url, size: "160x100") %>
+<br>
