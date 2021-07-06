@@ -9,6 +9,7 @@ class CreateEmployees < ActiveRecord::Migration[5.1]
       t.string :img_url
 
       t.timestamps
+      t.integer :dog_id
     end
   end
 end
